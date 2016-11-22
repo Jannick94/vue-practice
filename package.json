@@ -1,0 +1,26 @@
+{
+  "name": "vue-practice",
+  "version": "1.0.0",
+  "description": "Practicing with Vuejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JannickMoodles/vue-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JannickMoodles/vue-practice/issues"
+  },
+  "homepage": "https://github.com/JannickMoodles/vue-practice#readme",
+  "dependencies": {
+    "vue": "^2.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
