@@ -15,7 +15,7 @@ Vue.component('vp-nav-items', {
     </ul>`
 });
 
-Vue.component('vp-content', {
+Vue.component('vp-section', {
   template: 
     `<section class="padding">
       <slot></slot>
