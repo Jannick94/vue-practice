@@ -15,10 +15,19 @@ Vue.component('vp-nav-items', {
     </ul>`
 });
 
-Vue.component('vp-section', {
+Vue.component('vp-content', {
   template: 
-    `<section class="padding">
-      <slot></slot>
+    `<div class="content"><slot></slot></div>`
+});
+
+Vue.component('vp-section', {
+  props: ['type'],
+  template: 
+    `<section class="section" :class="{ 'section-dark': type }">
+      <vp-content>
+        <slot name="title"></slot>
+        <slot></slot>
+      </vp-content>
     </section>`
 })
 
