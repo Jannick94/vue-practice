@@ -13,7 +13,7 @@ Vue.component('vp-nav-items', {
   props: ['items'],
   template: 
     `<ul>
-      <li v-for="item in items">{{ item.text }}</li>
+      <li v-for="item in items"><router-link :to="{ path: item.url }">{{ item.text }}</router-link></li>
     </ul>`
 });
 
@@ -47,17 +47,17 @@ Vue.component('vp-section', {
         <button @click="fetchContent()">Fetch new content</button>
       </vp-content>
     </section>`
-})
+});
 
 var app = new Vue({
   el: '#app',
-
+  router: router,
   data: {
     content: '',
     items: [
-      { text: 'Item 1' },
-      { text: 'Item 2' },
-      { text: 'Item 3' }
+      { text: 'Item 1', url: ' ' },
+      { text: 'Item 2', url: 'skills' },
+      { text: 'Item 3', url: '' }
     ]
   }
 });
