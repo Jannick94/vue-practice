@@ -3,7 +3,9 @@
 Vue.component('vp-header', {
   template: 
     `<div class="header">
-      <slot></slot>
+      <vp-content>
+        <slot></slot>
+      </vp-content>
     </div>`
 });
 
