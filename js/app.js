@@ -13,25 +13,23 @@ Vue.component('vp-nav-items', {
     `<ul>
       <li v-for="item in items">{{ item.text }}</li>
     </ul>`
+});
+
+Vue.component('vp-content', {
+  template: 
+    `<section class="padding">
+      <slot></slot>
+    </section>`
 })
 
 var app = new Vue({
   el: '#app',
 
   data: {
-    message: 'Hello Vue',
-    seen: true,
-    todo: '',
-    todos: [
+    items: [
       { text: 'Item 1' },
       { text: 'Item 2' },
       { text: 'Item 3' }
     ]
-  },
-
-  methods: {
-    addTodo: function(todo) {
-      this.todos.push({ text: todo });
-    }
   }
 });
