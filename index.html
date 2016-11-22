@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Vuejs</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <vp-header items="todos">
+        <h1>Brand</h1>
+
+        <vp-nav-items :items="todos"></vp-nav-items>
+      </vp-header>
+    </div>
+  </body>
+
+  <script src="node_modules/vue/dist/vue.js"></script>
+  <script src="js/app.js"></script>
+</html>
