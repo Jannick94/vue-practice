@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>Vuejs</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400:500" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/app.css">
   </head>
   <body>
@@ -10,9 +11,26 @@
 
         <vp-nav-items :items="items"></vp-nav-items>
       </vp-header>
+      
+      <vp-section>
+        <h2 slot="title">First section</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit mollitia soluta minima ut incidunt, at ab magnam voluptatibus et eaque. Assumenda quaerat repudiandae nesciunt sapiente quam aliquid enim vel quisquam.
+        </p>
+      </vp-section>
+
+      <vp-section type="dark">
+        <h2 slot="title">Second slot</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta debitis autem ipsam aut, possimus, non ut distinctio laborum eum dolorum repellat natus exercitationem, modi quos reprehenderit provident odio dolorem.
+        </p>
+      </vp-section>
 
       <vp-section>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta debitis autem ipsam aut, possimus, non ut distinctio laborum eum dolorum repellat natus exercitationem, modi quos reprehenderit provident odio dolorem.
+        <h2 slot="title">Third slot</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta debitis autem ipsam aut, possimus, non ut distinctio laborum eum dolorum repellat natus exercitationem, modi quos reprehenderit provident odio dolorem.
+        </p>
       </vp-section>
     </div>
   </body>
