@@ -20,5 +20,7 @@ body {
     flex: 1;
     list-style: none;
     margin: auto;
-    justify-content: space-around;
-    align-items: flex-end; }
+    justify-content: space-around; }
+
+.padding {
+  padding: 10px; }
